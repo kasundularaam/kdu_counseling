@@ -20,7 +20,7 @@ class LoginCubit extends Cubit<LoginState> {
           user: SharedUser(id: appUser.id, email: email, password: password));
       emit(LoginSucceed(appUser: appUser));
     } catch (e) {
-      emit(LoginFailed(errorMsg: e.toString()));
+      emit(LoginFailed(errorMsg: "Wrong credentials!"));
     }
   }
 }

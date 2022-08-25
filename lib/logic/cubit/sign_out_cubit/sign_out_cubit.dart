@@ -13,7 +13,7 @@ class SignOutCubit extends Cubit<SignOutState> {
       await SharedServices.removeUser();
       emit(SignOutSucceed());
     } catch (e) {
-      emit(SignOutFailed(errorMsg: e.toString()));
+      emit(SignOutFailed(errorMsg: "Something went wrong!"));
     }
   }
 }

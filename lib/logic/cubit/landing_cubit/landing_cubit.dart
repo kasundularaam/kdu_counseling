@@ -26,7 +26,7 @@ class LandingCubit extends Cubit<LandingState> {
         emit(LandingToAuth());
       }
     } catch (e) {
-      emit(LandingFailed(errorMsg: e.toString()));
+      emit(LandingFailed(errorMsg: "User data not available!"));
     }
   }
 }

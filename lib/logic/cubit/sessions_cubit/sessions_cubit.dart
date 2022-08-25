@@ -21,7 +21,7 @@ class SessionsCubit extends Cubit<SessionsState> {
         emit(SessionsLoaded(sessions: sessions));
       }
     } catch (e) {
-      emit(SessionsFailed(errorMsg: e.toString()));
+      emit(SessionsFailed(errorMsg: "Can't connect to the server!"));
     }
   }
 }
