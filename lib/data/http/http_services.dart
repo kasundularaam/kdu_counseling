@@ -30,8 +30,7 @@ class HttpServices {
 
   Future<List<ChatSession>> sessionsById({required int id}) async {
     try {
-      Response response = await dio.get(DataProvider.sessionsById(19));
-      // Response response = await dio.get(DataProvider.sessionsById(id));
+      Response response = await dio.get(DataProvider.sessionsById(id));
       List<dynamic> resData = response.data;
       List<ChatSession> sessions =
           resData.map((map) => ChatSession.fromMap(map)).toList();

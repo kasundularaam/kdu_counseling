@@ -5,6 +5,7 @@ import 'package:sizer/sizer.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../../core/components/components.dart';
+import '../../../core/configs/configs.dart';
 import '../../../core/constants/strings.dart';
 import '../../../core/themes/app_colors.dart';
 import '../../../data/models/app_user.dart';
@@ -55,9 +56,11 @@ class _ChatPageState extends State<ChatPage> {
                   )
                 : null,
           ),
-          const Expanded(
+          Expanded(
             child: WebView(
-              initialUrl: "https://www.sololearn.com/",
+              javascriptMode: JavascriptMode.unrestricted,
+              initialUrl:
+                  "$chatServer/chat.html?username=${appUser.name}&room=${session.id}",
             ),
           ),
         ],
