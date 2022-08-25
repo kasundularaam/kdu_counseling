@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kdu.kdu_counseling">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="kdu_counseling"
         android:name="${applicationName}"
