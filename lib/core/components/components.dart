@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kdu_counseling/data/models/app_user.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../data/models/app_user.dart';
 import '../../logic/cubit/sign_out_cubit/sign_out_cubit.dart';
 import '../../presentation/screens/auth/widgets/sign_out_view.dart';
 import '../constants/strings.dart';

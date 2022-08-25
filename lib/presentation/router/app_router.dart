@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:kdu_counseling/presentation/screens/chat_screen/chat_page.dart';
 import '../../core/exceptions/route_exception.dart';
 import '../../data/models/app_user.dart';
 import '../../logic/cubit/landing_cubit/landing_cubit.dart';
 import '../../logic/cubit/login_cubit/login_cubit.dart';
 import '../../logic/cubit/sessions_cubit/sessions_cubit.dart';
 import '../screens/auth/login_screen/login_page.dart';
+import '../screens/chat_screen/chat_page.dart';
 import '../screens/home_screen/home_page.dart';
 import '../screens/landing_screen/landing_page.dart';
 

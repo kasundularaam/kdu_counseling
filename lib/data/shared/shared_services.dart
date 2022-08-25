@@ -1,5 +1,6 @@
-import 'package:kdu_counseling/data/models/shared_user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../models/shared_user.dart';
 
 class SharedServices {
   static const String idKey = "id";

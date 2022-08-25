@@ -1,14 +1,12 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import 'package:kdu_counseling/core/components/components.dart';
-import 'package:kdu_counseling/core/themes/app_colors.dart';
-import 'package:kdu_counseling/data/models/app_user.dart';
-import 'package:kdu_counseling/presentation/router/app_router.dart';
-
+import '../../../../core/components/components.dart';
 import '../../../../core/constants/strings.dart';
+import '../../../../core/themes/app_colors.dart';
+import '../../../../data/models/app_user.dart';
 import '../../../../data/models/chat_session.dart';
+import '../../../router/app_router.dart';
 
 class SessionCard extends StatefulWidget {
   final ChatSession session;
