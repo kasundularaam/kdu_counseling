@@ -1,9 +1,6 @@
-const String server = "http://critssl.com/abc/kdu/kdu_counselling/public/api";
-
-const String chatServer = "http://192.168.8.101:3000";
-
+const String server = "http://critssl.com/kdu_counselling/public/api";
 const String port = "8000";
-
 const String url = "$server:$port";
 
-const String socketAddress = "https://server";
+const String chatServer =
+    "http://ec2-54-248-70-255.ap-northeast-1.compute.amazonaws.com:3000";
