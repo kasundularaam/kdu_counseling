@@ -1,4 +1,4 @@
-const String server = "http://critssl.com/kdu_counselling/public/api";
+const String server = "http://kducounselling.online/kdu_counselling/public/api";
 const String port = "8000";
 const String url = "$server:$port";
 
